@@ -1,0 +1,14 @@
+.header {
+	background-color: #1d2126;
+	height: 80px;
+}
+
+
+
+.header__logo {
+	margin-right: auto;
+}
+
+.header__search {
+	margin-left: 97px;
+}
