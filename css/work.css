@@ -1,4 +1,53 @@
 .work__button {
-	margin: auto;
+	margin: 30px auto 0;
+	display: block;
+}
+
+.work-item {
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 30px;
+	display: block;
+}
+
+.work-item:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(41,47,54, 0.5);
+	background-image: url(../icon/plus.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: opacity 0.3s;
+	opacity: 0;
+}
+
+.work-item:hover:after {
+	opacity: 1;
+}
+
+.work-item:hover .work-item__name {
+	transform: translateY(0);
+}
+
+.work-item__name {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #292f36;
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 21px; 
+	transition: transform 0.3s;
+	transform: translateY(100%);
+}
+
+.work-item__image {
+	position: relative;
 	display: block;
 }

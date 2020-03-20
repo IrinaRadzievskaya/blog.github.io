@@ -1,0 +1,18 @@
+.features__title {
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 29px;
+}
+
+.features__img {
+	margin-bottom: 55px;
+	display: block;
+}
+
+.features__description {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	line-height: 1.8;
+}

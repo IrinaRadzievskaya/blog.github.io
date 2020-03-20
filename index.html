@@ -4,10 +4,18 @@
 	<meta charset="UTF-8">
 	<title>blog</title>
 	<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/general.css">
 	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/slider.css">
 	<link rel="stylesheet" href="css/work.css">
+	<link rel="stylesheet" href="css/modest.css">
+	<link rel="stylesheet" href="css/team.css">
+	<link rel="stylesheet" href="css/features.css">
+	<link rel="stylesheet" href="css/whatwedo.css">
+	<link rel="stylesheet" href="css/contacts.css">
+	<link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
 	<header class="header">
@@ -37,7 +45,7 @@
 		</div>
 	</header>
 	<div class="slider">
-		<div class="container container_column">
+		<div class="container">
 			<div class="col-7">
 				<div class="slider__title">Welcome to our marketplace</div>
 				<div class="slider__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus ...</div>
@@ -53,20 +61,38 @@
 			</div>
 			<div class="row">
 				<div class="col-7">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum  quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis lacusullamcorper at</p>
-					<p>Phasellus sollicitudin ante eros ornare, sit amet luctus lorem semper. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum</p>
+					<div class="modest__description">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum  quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis lacusullamcorper at</p>
+						<p>Phasellus sollicitudin ante eros ornare, <b>sit amet luctus lorem semper</b>. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum</p>
+					</div>
 					<div class="modest-social">
 						<a href="" class="modest-social__link modest-social__link_fb"></a>
+						<a href="" class="modest-social__link modest-social__link_tw"></a>
+						<a href="" class="modest-social__link modest-social__link_gg"></a>
+						<a href="" class="modest-social__link modest-social__link_dr"></a>
+						<a href="" class="modest-social__link modest-social__link_be"></a>
 					</div>
 				</div>
 				<div class="col-5">
 					<ol class="modest-list">
 						<li class="modest-list__item">
-							<div class="modest-list__title">Dedication to the customers</div> 
-							<div class="modest-list__description">Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus. Nam porttitor blandit ultricies.</div>
+							<div class="modest-list__content">
+								<div class="modest-list__title">Dedication to the customers</div> 
+								<div class="modest-list__description">Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus. </div>
+							</div>
 						</li>
-						<li></li>
-						<li></li>
+						<li class="modest-list__item">
+							<div class="modest-list__content">
+								<div class="modest-list__title">Working closely with our clients</div> 
+								<div class="modest-list__description">Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh.</div>
+						</div>
+						</li>
+						<li class="modest-list__item">
+							<div class="modest-list__content">
+								<div class="modest-list__title">increase happiness</div> 
+								<div class="modest-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod.</div>
+							</div>
+						</li>
 					</ol>
 				</div>
 			</div>
@@ -236,7 +262,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="section section_features">
+	<div class="section section_dark section_features">
 		<div class="container">
 			<div class="col-12">
 				<div class="section__title">Features.</div>
@@ -266,9 +292,7 @@
 				<div class="section__title">stay in touch.</div>
 			</div>
 		</div>
-		<div class="contacts__map">
-			<img src="img/map.png" alt="" class="map">
-		</div>
+		<img src="img/map.png" alt="" class="contacts__map">
 		<div class="container">
 			<div class="row">
 				<div class="col-6">
@@ -281,11 +305,11 @@
 				<div class="col-6">
 					<form class="contacts__form">
 						<div class="row">
-							<div class="form__field">
+							<div class="form__field form__field_input-text">
 								<label for="contacts-name">Your name</label>
 								<input type="text" id="contacts-name">
 							</div>
-							<div class="form__field">
+							<div class="form__field form__field_input-text">
 								<label for="contacts-email">Your email</label>
 								<input type="text" id="contacts-email">
 							</div>
@@ -294,7 +318,7 @@
 							<label for="contacts-message">Your message</label>
 							<textarea id="contacts-message"></textarea>
 						</div>
-						<button type="submit">Send message</button>
+						<button type="submit" class="submit">Send message</button>
 					</form>
 				</div>
 			</div>
@@ -302,8 +326,8 @@
 	</div>
 	<footer class="footer">
 		<div class="container">
-			<div class="footer__copyright col-6">© Copyright 2014 by PSD Booster. All Rights Reserved.</div>
-			<div class="footer__socials col-6">
+			<div class="footer__copyright">© Copyright 2014 by PSD Booster. All Rights Reserved.</div>
+			<div class="footer__socials">
 				<div class="socials__item socials__item_tw"></div>
 				<div class="socials__item socials__item_fb"></div>
 				<div class="socials__item socials__item_sk"></div>

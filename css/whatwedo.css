@@ -1,0 +1,43 @@
+.whatwedo__title {
+	font-size: 17px;
+	color: #292f36;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.whatwedo__description {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #8d8f92;
+	margin-bottom: 90px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+
+.whatwedo__icon{
+	margin: 0 auto 35px;
+	height: 45px;
+	width: 45px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	display: block;
+}
+
+.whatwedo__icon_gear {
+	background-image: url(../icon/gear.png);
+}
+
+.whatwedo__icon_pencil {
+	background-image: url(../icon/pencil.png);
+}
+
+.whatwedo__icon_phone {
+	background-image: url(../icon/phone.png);
+}
+
+.whatwedo__icon_clock {
+	background-image: url(../icon/clock.png);
+}
